@@ -5,7 +5,7 @@ class eth_pkt;
     rand bit [47:0] da; 
     rand bit [47:0] sa;
     rand bit [15:0] len;
-    rand bit [8:0] payload[$]; //queue of octets
+    rand bit [7:0] payload[$]; //queue of octets
     bit [31:0] crc;
     //methods
         function new();
