@@ -69,6 +69,9 @@ class sample_pkt;
             payload[i] = byteQ[14+i];
             //payload.push_back(byteQ[14+i]); also works here
         end
+    // One line for the above code
+        //{>>byte{preamble, sa, len, payload}} = byteQ;
+
         if (len inside {[1:20]}) pkt_type = SMALL;
         if (len inside {[21:100]}) pkt_type = MEDIUM ;
         if (len inside {[101:255]}) pkt_type = LARGE;
