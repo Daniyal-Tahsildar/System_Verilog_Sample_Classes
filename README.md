@@ -14,7 +14,7 @@ Directory order:
 9.  new_sample
 10. extern_sample
 11. inheritance_polymorphism_sample
-12. cast_sample
-    12.1    using_bit
-    12.2    using_typedef
-    12.3    using_typedef_with_constraints
+12. cast_sample </br>
+&emsp; 12.1    using_bit </br>
+&emsp; 12.2    using_typedef </br>
+&emsp; 12.3    using_typedef_with_constraints </br>
