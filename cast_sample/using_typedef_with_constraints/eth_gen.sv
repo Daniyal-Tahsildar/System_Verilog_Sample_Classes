@@ -13,17 +13,17 @@ class eth_gen;
             case (pkt_b) 
                 0: begin
                     good_pkt = new();
-                    assert(good_pkt.randomize() with {good_pkt.pkt_t == GOOD;});
+                    assert(good_pkt.randomize()); // no need to add in-line constraints since constraints are already added in derieved class
                     eth_common::gen2bfm_mbox.put(good_pkt);
                 end
                 1: begin
                     bad_pkt = new();
-                    assert(bad_pkt.randomize()with {bad_pkt.pkt_t == BAD;});
+                    assert(bad_pkt.randomize());
                     eth_common::gen2bfm_mbox.put(bad_pkt);
                 end
                 2: begin
                     ill_pkt = new();
-                    assert(ill_pkt.randomize()with {ill_pkt.pkt_t == ILL;});
+                    assert(ill_pkt.randomize());
                     eth_common::gen2bfm_mbox.put(ill_pkt);
                 end
             endcase

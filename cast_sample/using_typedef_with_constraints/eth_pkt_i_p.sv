@@ -45,6 +45,10 @@ class eth_good_pkt extends eth_pkt;
         super.print(name);
         $display("\tcount_good = %0d\n", count_good);
     endfunction
+
+    constraint pkt_type_c {
+        pkt_t == GOOD;
+    }
 endclass
 
 class eth_bad_pkt extends eth_pkt;
@@ -58,6 +62,10 @@ class eth_bad_pkt extends eth_pkt;
         super.print(name);
         $display("\tcount_bad = %0d\n", count_bad);
     endfunction
+
+    constraint pkt_type_c {
+        pkt_t == BAD;
+    }
 endclass
 
 class eth_ill_pkt extends eth_pkt;
@@ -71,6 +79,10 @@ class eth_ill_pkt extends eth_pkt;
         super.print(name);
         $display("\tcount_ill = %0d\n", count_ill);
     endfunction
+
+    constraint pkt_type_c {
+        pkt_t == ILL;
+    }
 endclass
 
 
