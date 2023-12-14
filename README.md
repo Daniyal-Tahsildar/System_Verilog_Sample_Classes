@@ -18,4 +18,7 @@ Directory order:
 &emsp; 12.1    using_bit </br>
 &emsp; 12.2    using_typedef </br>
 &emsp; 12.3    using_typedef_with_constraints </br>
-13. using_testcases_sample
+13. testcases_sample</br>
+&emsp; 13.1    using_static_and_common_class </br>
+&emsp; 13.2    without_using_static_and_common_class </br>
+
