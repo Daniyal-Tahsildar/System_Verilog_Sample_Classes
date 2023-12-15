@@ -18,11 +18,11 @@ Directory order:
 &emsp; 12.1    using_bit </br>
 &emsp; 12.2    using_typedef </br>
 &emsp; 12.3    using_typedef_with_constraints </br>
-13. testcases_sample</br>
+13. testcases_sample </br>
 &emsp; 13.1    using_static_and_common_class </br>
 &emsp; 13.2    without_using_static_and_common_class </br>
-14. class_parameterization_sample
-&emsp; 14.1    LIFO_FIFO_value_p.sv
-&emsp; 14.1    LIFO_FIFO_type_p.sv
-&emsp; 14.1    LIFO_FIFO_parameter_specialization.sv
+14. class_parameterization_sample </br>
+&emsp; 14.1    LIFO_FIFO_value_p.sv </br>
+&emsp; 14.1    LIFO_FIFO_type_p.sv </br>
+&emsp; 14.1    LIFO_FIFO_parameter_specialization.sv </br>
 
