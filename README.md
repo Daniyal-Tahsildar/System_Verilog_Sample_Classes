@@ -21,4 +21,8 @@ Directory order:
 13. testcases_sample</br>
 &emsp; 13.1    using_static_and_common_class </br>
 &emsp; 13.2    without_using_static_and_common_class </br>
+14. class_parameterization_sample
+&emsp; 14.1    LIFO_FIFO_value_p.sv
+&emsp; 14.1    LIFO_FIFO_type_p.sv
+&emsp; 14.1    LIFO_FIFO_parameter_specialization.sv
 
