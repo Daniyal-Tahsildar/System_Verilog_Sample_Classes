@@ -6,14 +6,12 @@ class eth_pkt;
 // any changes made in one instantiation are reflected on all instantiations
     static int count;
     //methods
-        
-    
-        function void print(string name = "eth_pkt");
-            $display(name);
-            $display("\tda = %h", da);
-            $display("\tlen = %0d", len);
-            $display("\tcount = %0d", count);
-            endfunction
+    function void print(string name = "eth_pkt");
+        $display(name);
+        $display("\tda = %h", da);
+        $display("\tlen = %0d", len);
+        $display("\tcount = %0d", count);
+    endfunction
     
     //constraints
         constraint len_c{
@@ -40,6 +38,5 @@ class eth_pkt;
 
         pkt1.print("pkt 1 printing");
         pkt2.print("pkt 2 printing");
-
     end
     endmodule

@@ -77,5 +77,4 @@ module top;
                 fwn_i_2.getQ(d);
             end
     end
-
 endmodule
