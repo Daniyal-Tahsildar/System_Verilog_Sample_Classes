@@ -26,3 +26,4 @@ Directory order:
 &emsp; 14.1    LIFO_FIFO_type_p.sv </br>
 &emsp; 14.1    LIFO_FIFO_parameter_specialization.sv </br>
 15. static_method_sample
+16. nested_class_scope_resolution_sample
