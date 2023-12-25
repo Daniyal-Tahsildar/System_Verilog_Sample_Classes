@@ -27,3 +27,7 @@ Directory order:
 &emsp; 14.1    LIFO_FIFO_parameter_specialization.sv </br>
 15. static_method_sample
 16. nested_class_scope_resolution_sample
+17. object_copying_sample </br>
+&emsp; 17.1    copy_by_handle.sv </br>
+&emsp; 17.1    deep_copy.sv </br>
+&emsp; 17.1    shallow_copy.sv </br>
