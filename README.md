@@ -32,3 +32,4 @@ Directory order:
 &emsp; 17.1    deep_copy.sv </br>
 &emsp; 17.1    shallow_copy.sv </br>
 18. typedef_sample
+19. struct_with_sort_sample
