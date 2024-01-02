@@ -54,6 +54,9 @@ module top;
 
         medals_A.rsort() with (item.gold + item.silver + item.bronze); //reverse sort with number of total medals as criteria
         $display("medals_A  after sorting (total medals as criteria) =\n\t %p", medals_A);
+
+        medals_A.rsort() with ({item.gold, item.silver, item.bronze}); //reverse sort with number of gold, silver and bronze medals as criteria (important)
+        $display("medals_A  after sorting (total number of gold, silver and bronze) =\n\t %p", medals_A);
         
     end
 endmodule
