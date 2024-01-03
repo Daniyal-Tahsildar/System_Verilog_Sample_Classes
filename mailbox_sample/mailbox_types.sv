@@ -48,6 +48,7 @@ module top;
         mbox_2.try_get(a);
         mbox_2.try_get(s);
         $display("\tmailbox_2 data = %p", mbox_2);
+        $display("\ts = %s", s); // elements do get values assigned even if they are not taken out of the mailbox
         $display("\tNumber of elements in the mailbox_2 = %0d", mbox_2.num()); 
 
     // Example_3
