@@ -35,3 +35,4 @@ Directory order:
 19. struct_with_sort_sample
 20. mailbox_sample
 21. event_sample
+22. semaphore_sample
