@@ -5,7 +5,7 @@ module top;
     event e1, e2, e3;
 initial begin
    // @(e1); //verilog style of synchronizing
-    wait(e1.triggered); // SV style of synchronizing
+    wait(e1.triggered()); // SV style of synchronizing
     $display("Process_2");
     -> e2;
 end
