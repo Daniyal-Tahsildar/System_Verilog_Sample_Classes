@@ -1,0 +1,12 @@
+class mem_agent;
+    mem_bfm bfm = new();
+    mem_gen gen = new();
+
+    task run();
+        fork
+            gen.run();
+            bfm.run();
+        join
+    endtask
+
+endclass
