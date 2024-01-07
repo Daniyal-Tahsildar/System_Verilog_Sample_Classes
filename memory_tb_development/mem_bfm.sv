@@ -1,6 +1,6 @@
 class mem_bfm;
     mem_tx tx;
-    virtual intf vif;
+    virtual intf.bfm_mp vif;
 
     function new();
         vif = mem_common::vif;
@@ -15,17 +15,17 @@ class mem_bfm;
     endtask
 
     task drive_tx(mem_tx tx);
-        @(posedge vif.clk_i);
-        vif.addr_i <= tx.addr;
-        if(tx.wr_rd == 1) vif.wr_data_i <= tx.data;
-        vif.wr_rd_i <= tx.wr_rd;
-        vif.valid_i <= 1;
-        wait(vif.ready_o == 1);
-        @(posedge vif.clk_i);
-        vif.addr_i <= 0;
-        vif.wr_data_i <= 0;
-        vif.wr_rd_i <= 0;
-        vif.valid_i <= 0;
+        @(vif.bfm_cb);
+        vif.bfm_cb.addr_i <= tx.addr;
+        if(tx.wr_rd == 1) vif.bfm_cb.wr_data_i <= tx.data;
+        vif.bfm_cb.wr_rd_i <= tx.wr_rd;
+        vif.bfm_cb.valid_i <= 1;
+        wait(vif.bfm_cb.ready_o == 1);
+        @(vif.bfm_cb);
+        vif.bfm_cb.addr_i <= 0;
+        vif.bfm_cb.wr_data_i <= 0;
+        vif.bfm_cb.wr_rd_i <= 0;
+        vif.bfm_cb.valid_i <= 0;
     endtask
 
 
