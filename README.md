@@ -37,5 +37,6 @@ Directory order:
 21. event_sample
 22. semaphore_sample
 23. memory_tb_development </br>
-&emsp; 23.1     memory_tb_with_cb_semaphore </br> 
-&emsp; 23.2     memory_tb_with_clocking </br>
+&emsp; 23.1     memory_tb_with_clocking </br>
+&emsp; 23.2     memory_tb_with_cb_semaphore </br> 
+&emsp; 23.2     memory_tb_with_cb_smp_updated_monitor <\br>
