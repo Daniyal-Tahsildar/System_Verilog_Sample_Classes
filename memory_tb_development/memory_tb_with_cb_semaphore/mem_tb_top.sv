@@ -16,6 +16,7 @@ module top;
         .ready_o(pif.ready_o)); 
 
     mem_env env;
+    mem_common common = new();
 
     initial begin
         clk = 0;
@@ -46,13 +47,13 @@ module top;
         env.run();
     end
 
-    // initial begin
-        
-    //end
+    final begin //to see coverage
+        $display("Coverage after tx %0d = %0.2f", mem_common::total_driven_tx, env.agentDA[0].cov.mem_cg.get_inst_coverage());    
+      end
 
     initial begin
         //#1000;
-        wait(mem_common::count*2 == mem_common::total_driven_tx);
+        wait(mem_common::count*2*mem_common::num_agents == mem_common::total_driven_tx); //count required for 3 agents
         @(posedge clk); //time for last tx to complete
         $finish;
     end
