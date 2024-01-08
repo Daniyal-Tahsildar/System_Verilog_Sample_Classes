@@ -48,7 +48,7 @@ module top;
     end
 
     final begin //to see coverage
-        $display("Coverage after tx %0d = %0.2f", mem_common::total_driven_tx, env.agentDA[0].cov.mem_cg.get_inst_coverage());    
+        $display("Coverage after tx %0d = %0.2f", mem_common::total_driven_tx, env.cov.mem_cg.get_inst_coverage());    
       end
 
     initial begin

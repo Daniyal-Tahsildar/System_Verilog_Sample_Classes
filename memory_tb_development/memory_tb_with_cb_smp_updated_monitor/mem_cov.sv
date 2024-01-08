@@ -3,6 +3,7 @@ class mem_cov;
     event mem_cg_e;
 
     covergroup mem_cg @(mem_cg_e); //only triggers at an event named mem_cg_e
+        option.per_instance = 1;
         ADDR_CP: coverpoint tx.addr{
             option.auto_bin_max = 5; // automatically divides all the possible values into 5 bins
         }

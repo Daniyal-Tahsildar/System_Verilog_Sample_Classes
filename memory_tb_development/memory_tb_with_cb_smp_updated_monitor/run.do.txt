@@ -3,3 +3,7 @@ vlog list.svh
 vsim top +testcase=n_wr_n_rd_test -l n_wr_n_rd_test.log
 add wave sim:/top/pif/*
 run -all
+
+#use following commands for EDA playground
+#vsim +access+r;
+#run -all;

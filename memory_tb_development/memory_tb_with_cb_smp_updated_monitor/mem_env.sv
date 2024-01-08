@@ -2,6 +2,8 @@ class mem_env;
     //mem_agent agent = new();
     //for multiple agents
     mem_agent agentDA[];
+    mem_mon mon = new();
+    mem_cov cov = new();
 
     function new();
         agentDA = new[mem_common::num_agents]; // allocating memory to DA
@@ -12,6 +14,12 @@ class mem_env;
     endfunction
 
     task run();
+        //start mon and cov
+        fork
+            mon.run();
+            cov.run();
+        join_none
+        //start all the agents
         for (int i =0; i < mem_common::num_agents; i++) begin
         fork
             agentDA[i].run();
